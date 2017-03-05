@@ -1,0 +1,21 @@
+{
+  "name": "exp-remote-redux-dev-tools",
+  "version": "0.0.0",
+  "description": "Hello Exponent!",
+  "author": null,
+  "private": true,
+  "main": "main.js",
+  "dependencies": {
+    "@exponent/vector-icons": "~4.0.0",
+    "exponent": "^14.0.0",
+    "react": "~15.4.0",
+    "react-native": "https://github.com/exponent/react-native/archive/sdk-14.0.0.tar.gz",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
+    "redux-thunk": "^2.2.0",
+    "remote-redux-devtools": "^0.5.7"
+  },
+  "devDependencies":{
+    "remotedev-server": "^0.3.0-beta-3"
+  }
+}
