@@ -25,11 +25,18 @@ const composeEnhancers = composeWithDevTools({
 
 const store = createStore(
   reducer,
-  initialState,
+  preloadedState,      // Omit this if your don't have preload state
   composeEnhancers(    // Use this instead of compose from redux
     applyMiddleware(...middleware),
     // other store enhancers if any
   )
 );
 
+```
+Or this if you don't use middleware
+```
+import { createStore } from 'redux';
+import devToolsEnhancer from 'remote-redux-devtools';
+const store = createStore(reducer, preloadedState, devToolsEnhancer());
+const store = createStore(reducer, devToolsEnhancer()) // If you don't have preload state
 ```
